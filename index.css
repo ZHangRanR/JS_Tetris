@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ddd;
+}
+
+.wrapper{
+    width: 450px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 150px auto 0px auto;
+}
+
+/* 游戏界面 */
+#tetris {
+    height: 600px;
+    width: 300px;
+    border: 1px solid black;
+    padding: 0px 4px;
+    /* box-sizing: border-box; */
+    position: relative;
+}
+
+/* 游戏信息 */
+.info {
+    height: 600px;
+    width: 150px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-left-width:0px;
+}
+
+/* 得分 */
+.score {
+    width: 100%;
+    margin-top: 30px;
+    color: black;
+}
+
+.title{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px 10px;
+    line-height: 30px;
+    border: 2px dotted #000;
+    text-align: center;
+    font-size: 30px;
+}
+ .number{
+    border: 2px double #000;
+    width: 80%;
+    margin: 10px auto;
+    padding: 2px 5px;
+    line-height: 30px;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+/* 游戏等级 */
+.level{
+    width: 100%;
+    margin-top: 30px; 
+}
+
+/* 已消除的行数 */
+.lines{
+    width: 100%;
+    margin-top: 30px; 
+}
+
+/* 下一个方块 */
+.next {
+    width: 80%;
+    height: 150px;
+    margin: 20px auto 10px;
+}
+
+/* 预展示区域 */
+.show {
+    position: relative;
+    margin-left:-120px;
+    margin-top: 120px;
+}
+
+
+/* 子方块 */
+.square {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    box-shadow: inset 1px 1px 1px 1px #fff,
+                inset -1px -1px 1px 2px #000;
+}
